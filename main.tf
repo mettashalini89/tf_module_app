@@ -45,8 +45,8 @@ resource "aws_autoscaling_group" "main" {
 }
 
 resource "aws_security_group" "main" {
-  name        = "${varcomponent}-${var.env}"
-  description = "${varcomponent}-${var.env}"
+  name        = "${var.component}-${var.env}"
+  description = "${var.component}-${var.env}"
   vpc_id      = var.vpc_id
 
   ingress {

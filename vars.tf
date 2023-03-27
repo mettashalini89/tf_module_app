@@ -13,3 +13,5 @@ variable "port" {}
 variable "dns_domain" {}
 variable "alb" {}
 variable "alb_dns_name" {}
+variable "listner_arn" {}
+variable "listner_priority" {}

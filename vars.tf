@@ -16,3 +16,4 @@ variable "alb_dns_name" {}
 variable "listner_arn" {}
 variable "listner_priority" {}
 variable "parameters" {}
+variable "monitoring_nodes" {}

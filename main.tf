@@ -1,5 +1,6 @@
 resource "aws_launch_template" "main" {
   name = "${var.component}-${var.env}"
+
   iam_instance_profile {
     name = aws_iam_instance_profile.main.name
   }
@@ -119,7 +120,7 @@ resource "aws_route53_record" "main" {
   records = [var.alb_dns_name]
 }
 
-resource "aws_lb_listener_rule" "host_based_weighted_routing" {
+resource "aws_lb_listener_rule" "listner_rule" {
   listener_arn = var.listner_arn
   priority     = var.listner_priority
 

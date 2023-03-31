@@ -13,7 +13,7 @@ variable "port" {}
 variable "dns_domain" {}
 variable "alb" {}
 variable "alb_dns_name" {}
-variable "listner_arn" {}
-variable "listner_priority" {}
+variable "listener_arn" {}
+variable "listener_priority" {}
 variable "parameters" {}
 variable "monitoring_nodes" {}

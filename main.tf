@@ -133,9 +133,9 @@ resource "aws_route53_record" "main" {
   records = [var.alb_dns_name]
 }
 
-resource "aws_lb_listener_rule" "listner_rule" {
-  listener_arn = var.listner_arn
-  priority     = var.listner_priority
+resource "aws_lb_listener_rule" "listener_rule" {
+  listener_arn = var.listener_arn
+  priority     = var.listener_priority
 
   action {
     type             = "forward"
